@@ -43,11 +43,10 @@ def listar_restaurantes():
     os.system('cls')
     print('Listando todos os restaurantes\n')
             
-    for restaurante in restaurantes:
+for restaurante in restaurantes:
     print(f'.{restaurante}')
 
-
-    voltar_ao_menu_principal()
+voltar_ao_menu_principal()
 
 def escolher_opçao():
     try:
@@ -64,7 +63,7 @@ def escolher_opçao():
         elif opçao_escolhida == 4:
             finalizar_app()
         else:
-            opçao_ivalida()
+            opçao_invalida()
      
     except:
         opçao_invalida()
